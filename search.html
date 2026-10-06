@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LPU Lost & Found | Search & Matches</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container nav-wrap">
+     <a href="index.html" class="brand" style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
+        <img src="LPU.png" alt="LPU Logo" style="height: 42px; width: auto; background: #fff; padding: 2px; border-radius: 4px;" />
+        <span style="color: #fff; font-weight: 700; font-size: 1.1rem; letter-spacing: 0.5px;">LPU FINDHUB</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="search.html" class="active">Search Items</a></li>
+        <li><a href="my-reports.html">My Reports</a></li>
+        <li><a href="messages.html">Messages</a></li>
+        <li><a href="admin.html">Admin</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="container" style="margin: 30px auto 60px;">
+    
+    <!-- Search / Filter Controls -->
+    <div style="background: var(--surface); padding: 24px; border-radius: var(--radius); border: 1px solid var(--border); box-shadow: var(--shadow);">
+      <h2 style="font-size: 1.3rem; margin-bottom: 16px;">🔎 Search Campus Database</h2>
+      
+      <div style="display: grid; grid-template-columns: 2fr 1fr 1fr 1fr auto; gap: 12px; align-items: end;">
+        <div class="form-group">
+          <label>Keyword</label>
+          <input type="text" class="form-control" placeholder="Search calculator, wallet, charger..." />
+        </div>
+        
+        <div class="form-group">
+          <label>Item Type</label>
+          <select class="form-control">
+            <option>All Types</option>
+            <option>Lost Items</option>
+            <option>Found Items</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Location</label>
+          <select class="form-control">
+            <option>All Campus</option>
+            <option>Central Library</option>
+            <option>Block 34 (CSE)</option>
+            <option>UniMall</option>
+            <option>Sports Complex</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Date</label>
+          <input type="date" class="form-control" />
+        </div>
+
+        <button class="btn btn-primary" style="height: 42px;">Filter</button>
+      </div>
+    </div>
+
+    <!-- Possible Matches Section -->
+    <div id="matches" style="margin-top: 40px;">
+      <div style="display:flex; justify-content:space-between; align-items:center;">
+        <div>
+          <h2>⚡ Possible Matches Detected</h2>
+          <p style="color: var(--text-muted); font-size: 0.88rem;">System correlated your lost item report (#LF-902) with newly reported found items.</p>
+        </div>
+        <span class="status-pill status-pending">92% Match Score</span>
+      </div>
+
+      <div class="cards-grid">
+        <div class="item-card" style="border: 2px solid #3b82f6;">
+          <span class="item-badge badge-found">Found Match</span>
+          <div class="item-img-box">🎧</div>
+          <div class="item-body">
+            <h4>OnePlus Nord Buds Case</h4>
+            <div class="item-meta">📍 Found at: Central Library, 2nd Floor</div>
+            <div class="item-meta">📅 Reported: Today, 10:15 AM</div>
+            <p class="item-desc"><strong>Why matched:</strong> Exact match with your lost report for white Bluetooth earbud charging case.</p>
+            <div class="item-footer">
+              <a href="messages.html" class="btn btn-primary btn-sm">Message Finder</a>
+              <button class="btn btn-outline btn-sm">Claim Verification</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- General Catalog Results -->
+    <div style="margin-top: 40px;">
+      <h2>All Active Postings</h2>
+      <div class="cards-grid">
+        
+        <div class="item-card">
+          <span class="item-badge badge-lost">Lost</span>
+          <div class="item-img-box">📱</div>
+          <div class="item-body">
+            <h4>Samsung Galaxy M34</h4>
+            <div class="item-meta">📍 Block 36, Room 302</div>
+            <div class="item-meta">📅 Oct 05, 2026</div>
+            <p class="item-desc">Dark blue back cover with a transparent ring stand.</p>
+            <div class="item-footer">
+              <span class="status-pill status-active">Searching</span>
+              <a href="messages.html" class="btn btn-danger btn-sm">Contact Owner</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="item-card">
+          <span class="item-badge badge-found">Found</span>
+          <div class="item-img-box">🔑</div>
+          <div class="item-body">
+            <h4>Room Key (Keyring #402)</h4>
+            <div class="item-meta">📍 BH-4 Mess Entry</div>
+            <div class="item-meta">📅 Oct 05, 2026</div>
+            <p class="item-desc">Single brass key on a red plastic tag with '402' inscribed.</p>
+            <div class="item-footer">
+              <span class="status-pill status-active">At Reception</span>
+              <button class="btn btn-success btn-sm">Claim Item</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="item-card">
+          <span class="item-badge badge-found">Found</span>
+          <div class="item-img-box">⌚</div>
+          <div class="item-body">
+            <h4>Fastrack Smartwatch</h4>
+            <div class="item-meta">📍 Baldev Raj Mittal Unipolis</div>
+            <div class="item-meta">📅 Oct 04, 2026</div>
+            <p class="item-desc">Black silicone strap. Kept safely with Unipolis event security.</p>
+            <div class="item-footer">
+              <span class="status-pill status-pending">1 Claim Pending</span>
+              <button class="btn btn-outline btn-sm">Details</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Lovely Professional University</p>
+    </div>
+  </footer>
+
+</body>
+</html>

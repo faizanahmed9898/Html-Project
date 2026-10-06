@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LPU Lost & Found | My Reports</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container nav-wrap">
+     <a href="index.html" class="brand" style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
+        <img src="LPU.png" alt="LPU Logo" style="height: 42px; width: auto; background: #fff; padding: 2px; border-radius: 4px;" />
+        <span style="color: #fff; font-weight: 700; font-size: 1.1rem; letter-spacing: 0.5px;">LPU FINDHUB</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="lost-item.html">Lost Item</a></li>
+        <li><a href="found-item.html">Found Item</a></li>
+        <li><a href="my-reports.html" class="active">My Reports</a></li>
+        <li><a href="messages.html">Messages</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="container" style="margin: 40px auto 60px;">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 20px;">
+      <div>
+        <h2>📋 My Submitted Reports</h2>
+        <p style="color: var(--text-muted); font-size: 0.88rem;">Track the real-time status of your lost and found submissions.</p>
+      </div>
+      <a href="lost-item.html" class="btn btn-primary">+ Create New Report</a>
+    </div>
+
+    <div class="table-wrapper">
+      <table class="custom-table">
+        <thead>
+          <tr>
+            <th>Report ID</th>
+            <th>Type</th>
+            <th>Item Name</th>
+            <th>Location</th>
+            <th>Date Logged</th>
+            <th>Verification Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>#LF-902</strong></td>
+            <td><span class="item-badge badge-lost">Lost</span></td>
+            <td>OnePlus Nord Buds Case</td>
+            <td>Central Library, 2nd Floor</td>
+            <td>Oct 05, 2026</td>
+            <td><span class="status-pill status-pending">1 Potential Match</span></td>
+            <td>
+              <a href="search.html#matches" class="btn btn-outline btn-sm">View Match</a>
+              <button class="btn btn-sm btn-outline" style="color: var(--lost-red);">Close</button>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>#FD-431</strong></td>
+            <td><span class="item-badge badge-found">Found</span></td>
+            <td>Casio Calculator FX-991</td>
+            <td>Block 34, Lab 201</td>
+            <td>Sep 29, 2026</td>
+            <td><span class="status-pill status-resolved">Handed Over</span></td>
+            <td>
+              <button class="btn btn-sm btn-outline" disabled>Completed</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Lovely Professional University</p>
+    </div>
+  </footer>
+
+</body>
+</html>
