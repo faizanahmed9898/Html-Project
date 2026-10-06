@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Lost & Found | Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container nav-wrap">
+     <a href="index.html" class="brand" style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
+        <img src="LPU.png." alt="LPU Logo" style="height: 42px; width: auto; background: #fff; padding: 2px; border-radius: 4px;" />
+        <span style="color: #fff or; font-weight: 700; font-size: 1.1rem; letter-spacing: 0.5px;">LPU FINDHUB</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="search.html">Search Items</a></li>
+        <li><a href="my-reports.html">My Reports</a></li>
+        <li><a href="messages.html">Messages</a></li>
+        <li><a href="admin.html">Admin Panel</a></li>
+        <li><a href="auth.html" class="btn btn-outline" style="color:#fff; border-color:#6b7280;">Login</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="hero-banner">
+    <div class="container">
+      <h1>LPU Lost & Found Portal</h1>
+      <p>A centralized platform for students, faculty, and campus drop points across our 600-acre campus to report and recover lost items quickly.</p>
+    </div>
+  </section>
+
+  <main class="container">
+    <div class="action-grid">
+      <!-- 🔴 I Lost Something -->
+      <a href="lost-item.html" class="action-card lost-accent">
+        <div class="icon">🔴</div>
+        <h3>I Lost Something</h3>
+        <p>Post details, upload photos, and set security questions for your lost belonging.</p>
+      </a>
+
+      <!-- 🟢 I Found Something -->
+      <a href="found-item.html" class="action-card found-accent">
+        <div class="icon">🟢</div>
+        <h3>I Found Something</h3>
+        <p>Report an item you picked up or handed over to a Block reception/desk.</p>
+      </a>
+
+      <!-- 🔎 Search Items -->
+      <a href="search.html" class="action-card search-accent">
+        <div class="icon">🔎</div>
+        <h3>Search Items</h3>
+        <p>Filter by academic block, hostel, UniMall, food courts, or date range.</p>
+      </a>
+
+      <!-- 📋 My Reports -->
+      <a href="my-reports.html" class="action-card reports-accent">
+        <div class="icon">📋</div>
+        <h3>My Reports</h3>
+        <p>Track claim verifications, update item statuses, or close resolved listings.</p>
+      </a>
+    </div>
+
+    <!-- AI / Automated Match Alert -->
+    <div class="match-banner">
+      <div>
+        <strong>⚡ Automated Match Alert:</strong> We discovered <strong>2 items</strong> found in <em>Central Library</em> matching recent lost reports!
+      </div>
+      <a href="search.html#matches" class="btn btn-primary btn-sm">View Possible Matches</a>
+    </div>
+
+    <div style="margin: 30px 0 50px;">
+      <h2>Recent Reports Around Campus</h2>
+      <div class="cards-grid">
+        <div class="item-card">
+          <span class="item-badge badge-found">Found</span>
+          <div class="item-img-box">🎧</div>
+          <div class="item-body">
+            <h4>OnePlus Nord Buds</h4>
+            <div class="item-meta">📍 Central Library, 3rd Floor</div>
+            <div class="item-meta">📅 Today, 11:30 AM</div>
+            <p class="item-desc">White case with anime stickers on back. Handed to circulation desk.</p>
+            <div class="item-footer">
+              <span class="status-pill status-pending">Claim Pending</span>
+              <a href="search.html" class="btn btn-outline btn-sm">Details</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="item-card">
+          <span class="item-badge badge-lost">Lost</span>
+          <div class="item-img-box">🪪</div>
+          <div class="item-body">
+            <h4>LPU Student ID Card</h4>
+            <div class="item-meta">📍 Block 34 Food Kiosk</div>
+            <div class="item-meta">📅 Yesterday, 04:15 PM</div>
+            <p class="item-desc">Orange lanyard with Reg No. 12204XXX (B.Tech CSE).</p>
+            <div class="item-footer">
+              <span class="status-pill status-active">Active Search</span>
+              <a href="search.html" class="btn btn-danger btn-sm">I Found This</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="item-card">
+          <span class="item-badge badge-found">Found</span>
+          <div class="item-img-box">🎒</div>
+          <div class="item-body">
+            <h4>Wildcraft Laptop Bag</h4>
+            <div class="item-meta">📍 UniMall Ground Floor</div>
+            <div class="item-meta">📅 Oct 04, 2026</div>
+            <p class="item-desc">Contains engineering math registers and an empty water bottle.</p>
+            <div class="item-footer">
+              <span class="status-pill status-active">Available</span>
+              <a href="search.html" class="btn btn-success btn-sm">Claim Item</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Lovely Professional University - Lost & Found Management Portal</p>
+    </div>
+  </footer>
+
+</body>
+</html>
